@@ -30,18 +30,18 @@ class App extends React.Component {
     this.unsubscribeFromAuth()
   };
 
-  // render() {
-  //   return (
-  //     <div>
-  //       <Header />
-  //       <Switch>
-  //         <Route exact path='/' component={HomePage} />
-  //         <Route path='/shop' component={ShopPage} />
-  //         <Route path='/signin' component={SignInAndSignUpPage} />
-  //       </Switch>
-  // //     </div>
-  //   );
-  // }
+  render() {
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/signin' component={SignInAndSignUpPage} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
