@@ -16,9 +16,9 @@ export const selectCollections = createSelector(
     shop => shop.collections
 )
 
-export const selectCollection = memoize((collectionUrlParam) =>
-    createSelector(
-        [selectCollections],
-        collections => collections.find(collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam])
-    )
-)
+// export const selectCollection = memoize((collectionUrlParam) =>
+//     createSelector(
+//         [selectCollections],
+//         collections => collections.find(collection => collection.id === COLLECTION_ID_MAP[collectionUrlParam])
+//     )
+// )
